@@ -1,0 +1,34 @@
+<html>
+<body>
+<h2>Initial conductance density values:</h2>
+GD_gsubNa=3p3_gL=fitted.mat - initial conductance values for Figure 4<br>
+GD_gsubNa=3p5_gsubK=p7_gM=1p75_gAHP=p5_gL=2_stdev=0.1_300mdls.mat - initial conductance values for Figure 5-10<br>
+ 
+<h2>Istim (fast fluctuating signal):</h2>
+fast_signal_mu_40_std=10p5_length=1p5sec.mat - the Istim (fast fluctuating signal) used for measuring firing rate
+ 
+<h2>Target ranges:</h2>
+output_target_values.mat - target ranges for outputs— firing rate, energy efficiency, input resistance, etc.
+ 
+<h2>Simulations:</h2>
+gridsearch.m<br>
+feedback_control.m   <br>
+feedback_control_dg.m   <br>
+P_control.m - Runs proportional feedback control without noise<br>
+P_control_dg.m - Modified from P_control.m to add noise (dg)      <br>                                                                                        
+ML_HH_adapt.m - Calculates V based on the input (gi’s) and returns spike timing<br>
+ML_HH_adapt_ver2.m - Modified from ML_HH_adapt.m to calculate FR and energy consumption rate<br>
+Rheo_ML_HH_JY.m - Modified from ML_HH_adapt.m to calculate rheobase<br>
+Vrest_Rinput_ML_HH.m - Modified from ML_HH_adapt.m to calculate Vrest and input resistance<br>
+calc_EE.m - Modified from ML_HH_adapt.m to calculate energy efficiency<br>
+calc_fmin.m - Modified from ML_HH_adapt.m to calculate minimum frequency<br>
+find_inter.m - Returns the intersection of two surfaces<br>
+round_JY.m - Round to two decimal places<br>
+ 
+<h2>Figures:</h2>
+figure3E_H.m - Reproduces Figure3E-H, but can be modified to reproduce contour plots and iso-output1 contour vs. output2 plots in Figure 3A-D<br>
+figure4.m - Reproduces Figure 4<br>
+figure5.m - Reproduces Figure 5D, which is essentially equal to a combination of Figure 5A-C<br>
+figure6-10.m - Reproduces Figure 6, but can be modified to reproduce 3D plots of iso-output surfaces, conductance trajectories and correlation matrices in Figures 7-10
+</body>
+</html>
